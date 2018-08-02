@@ -1,8 +1,8 @@
 {
   "name": "bday-ftiger",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "http://vdazrat.github.io/bday-ftiger",
+  "private": true,
+  "homepage": "https://vdazrat.github.io/bday-ftiger",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
