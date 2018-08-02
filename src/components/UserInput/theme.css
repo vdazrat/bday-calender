@@ -1,0 +1,40 @@
+.userInputContainer {
+	display: flex;
+	justify-content: center;
+}
+.userInput {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+}
+
+.textArea {
+	display: flex;
+	width: 40%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.year {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-self: flex-start;
+	margin-top: 30px;
+}
+
+.button {
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	background-color: #0ca5ff;
+	border-color: #0ca5ff;
+	color: #fff;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+ }
+ .buttons > .button {
+ 	margin-right: 10px;
+ }

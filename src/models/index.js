@@ -1,25 +1,27 @@
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 class Day {
-    constructor(dayOfWeek, data) {
+    constructor(dayOfWeek, data, year) {
         this.value = days.indexOf(dayOfWeek);
-        this.year = null;
         this.data = data;
+        this.year = year;
     }
 
     get birthdays() {
         if (this.year === null) return null;
-        // filter those names where year
+
+        // filter the data by year and this day
         const bdays = this.data.filter(({ birthday }) => {
             const date = new Date(birthday);
-            console.log(date.getFullYear(), this.year);
             return (
                 (date.getFullYear() === this.year)
                     &&
                 (date.getDay() === this.value)
             );
         });
-        if (!bdays.length) return null;
+
+        // return the initials
+        if (!bdays.length) return [];
         return bdays.map(this.getInitials);
     }
 
@@ -33,4 +35,9 @@ class Day {
     }
 }
 
-export default Day;
+// creates a factory method for creating Day objects, with data and year curried
+const createFactory = (data, year) => {
+    return (day) => new Day(day, data, year);
+};
+
+export default createFactory;

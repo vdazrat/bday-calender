@@ -1,0 +1,14 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100vh;
+	background-color: #f3f4f5;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: #7e818c;
+	font-size: 3.5vh;
+}
