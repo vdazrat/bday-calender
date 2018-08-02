@@ -2,7 +2,7 @@
   "name": "bday-ftiger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vdazrat.github.io/bday-ftiger",
+  "homepage": "https://vdazrat.github.io/bday-calender",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
